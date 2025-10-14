@@ -33,7 +33,7 @@ async function getAiCalculation(query) {
   aiResult.textContent = '⏳ Calculating...';
   aiResultContainer.classList.remove('hidden');
 
-  const GEMINI_API_KEY = "AIzaSyDS4pKSRyrKB36Ec3NlpQmiGprxqQLVKdg";
+  const GEMINI_API_KEY = "YOUR API KEY HERE";
   const GEMINI_API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${GEMINI_API_KEY}`;
 
   const body = {
