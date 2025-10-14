@@ -16,6 +16,8 @@ This project was built to **revise frontend fundamentals** while adding a creati
 - **AI Integration:** Gemini API  
 
 ### How to Use
-1. Clone the repository:
-```bash
-git clone <Your-GitHub-Link>
+1. Clone the repository:git clone <Your-GitHub-Link>
+
+2.Open index.html in your browser.
+
+3.Use the calculator normally or type math in plain language in the AI modal.
