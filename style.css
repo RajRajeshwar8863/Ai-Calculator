@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("https://img.freepik.com/premium-photo/calculator-magnifying-glass-eye-glasses-financial-statement-top-view_132358-7284.jpg?ga=GA1.1.1344972236.1735541381&semt=ais_hybrid&w=740");
+}
+
+.calculator {
+  background: #1e1e2f;
+  padding: 25px 30px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 30px rgba(0, 255, 255, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+.calculator:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 0px 40px rgba(0, 255, 255, 0.4);
+}
+
+.calculator form input {
+  border: none;
+  outline: none;
+  width: 65px;
+  height: 65px;
+  border-radius: 15px;
+  background: #2f3640;
+  box-shadow: inset -5px -5px 15px rgba(255,255,255,0.05), inset 5px 5px 15px rgba(0,0,0,0.2);
+  font-size: 22px;
+  color: #00ffd5;
+  cursor: pointer;
+  margin: 10px;
+  transition: all 0.2s;
+}
+
+.calculator form input:hover {
+  background: #3a3f50;
+  transform: scale(1.05);
+}
+
+form .display {
+  display: flex;
+  justify-content: flex-end;
+  margin: 20px 0;
+  background: #111;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: inset 0px 0px 10px rgba(0,255,255,0.1);
+}
+
+form .display input {
+  text-align: right;
+  flex: 1;
+  font-size: 45px;
+  background: transparent;
+  color: #0ff;
+  border: none;
+  box-shadow: none;
+}
+
+form input.equal {
+  width: 145px;
+  background: #00ffd5;
+  color: #1e1e2f;
+  font-weight: bold;
+  box-shadow: 0px 0px 15px rgba(0,255,255,0.4);
+}
+
+form input.operator {
+  color: #ff8c00;
+  font-weight: bold;
+}
+
+.operator:hover {
+  background-color: #ff8c00;
+  color: #fff;
+  box-shadow: 0 0 10px #ff8c00;
+}
+
+@media (max-width: 500px) {
+  .calculator form input {
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    margin: 5px;
+  }
+
+  form .display input {
+    font-size: 30px;
+  }
+}
+
+/* 🌟 AI Modal Styling */
+.ai-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  backdrop-filter: blur(3px);
+  z-index: 100;
+}
+
+.ai-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background: #1e1e2f;
+  padding: 20px;
+  border-radius: 15px;
+  width: 90%;
+  max-width: 400px;
+  z-index: 200;
+  color: #fff;
+  box-shadow: 0 0 20px rgba(0,255,255,0.3);
+}
+
+.ai-modal h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #00ffd5;
+}
+
+.ai-modal p {
+  text-align: center;
+  font-size: 14px;
+  opacity: 0.7;
+  margin-bottom: 10px;
+}
+
+.ai-modal textarea {
+  width: 100%;
+  height: 80px;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  resize: none;
+  background: #2f3640;
+  color: #0ff;
+  font-size: 16px;
+}
+
+.ai-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.ai-buttons button,
+#ai-use-result-btn {
+  background: #00ffd5;
+  color: #1e1e2f;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.ai-result-container {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.ai-result {
+  font-size: 28px;
+  color: #00ffd5;
+  margin: 10px 0;
+}
+
+
+.hidden {
+  display: none;
+}
